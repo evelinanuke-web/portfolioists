@@ -1,0 +1,89 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Feb 13, 2026, 11:50:27 AM
+    Author     : enuke
+*/
+
+body {
+  background-color:#fffcf1; /*fona krāsa*/
+}
+
+h1 {
+  font-size: 35pt;
+  font-family: Georgia, serif;
+  color: #81855E; /*teksta krāsa*/
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#63605f; /*fona krāsa*/
+border-radius: 5px;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover{ /*hover nozīmē izmaiņas*/
+  background-color:#4f4f4f;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+.dropdown-content a {
+  color: #6c584c;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+p{
+  color: #3d3d3d;
+}
+h2{
+  color: #3d3d3d;
+}
+h3{
+  color: #3d3d3d;
+}
+h4{
+  color: #3d3d3d;
+}
