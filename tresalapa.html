@@ -2,10 +2,36 @@
 <html>
 
 <head>
+     <style>
+    div.gallery {
+      margin: 15px;
+      padding: 15px;
+      border: 1px solid  #e5dfe8;
+      float: left;/*nosaka kurā pusē atrodas*/
+      width: 21%;
+     border-radius:15px;/*nosaka, cik apaļa būs maliņa*/
+    }
+
+    div.gallery:hover {
+      border: 1px solid #742d9d;
+    }
+
+    div.gallery img {
+      width:360px;
+      height:480px ;
+      text-align:center;
+      margin: 5px;
+      }
+    img{
+        border-radius: 5px;
+      }
+    
+     body,h1,h2,h3,h4,h5,h6 {font-family: "Georgia", sans-serif}
+  </style>
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link href="css/css.css" rel="stylesheet" type="text/css" />
+ <link href="CSS/css.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -30,6 +56,39 @@
   <p>Mēs apguvām MS Excel izmantošanu, funkcijas un datu apstrādi pēc vairākiem kritērijiem. Uzzinājām, kā iesaldēt rindas un kolonnas.</p>
   
   <p>Excel apguvām datu apsterādi. Iemācījos, kā filtrēt tabulas. </p>
+  
+
+  <div class="gallery">
+
+    <a target="_blank" href="augsejieelpceli.png">
+      <img src="images/excel_3.PNG" alt="Foto ar Excel darba pierādījumu par funkciju izmantošanu.">
+    </a>
+    <div class="desc">Izmantojām dažādas funkcijas, piemēram, figūras laukuma aprēķināšanai.</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="gazumaina.png">
+      <img src="images/excel_2.PNG" alt="Foto ar Excel darba pierādījumu par rakurstabulu izmantošanu." >
+    </a>
+    <div class="desc">Iemācījāmies, kā analizēt un apkopot datus, izmantojot rakurstabulas</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="shema.png">
+      <img src="images/excel_1.PNG" alt="Foto ar Excel darba pierādījumu par diagrammu izmantošanu.">
+    </a>
+    <div class="desc">Attēlojām datus dažādu tipu diagrammās.</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="images/excel_4.PNG" alt="Foto ar Excel darba pierādījumu par datu filtrēšanu.">
+    </a>
+    <div class="desc">Ekselī apguvām filtrēt datus pēc viena vai vairākiem kritērijiem.</div>
+  </div>
+
+  </div>
+
   
 </body>
 </html>
