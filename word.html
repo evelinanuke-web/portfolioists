@@ -6,10 +6,45 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
  <link href="CSS/css.css" rel="stylesheet" type="text/css" />
+ <style>
+body {
+   background-color:#fffcf1; /*fona krāsa*/
+  margin-left: 2%;
+  margin-right: 2%;
+}
+ div.gallery {
+      margin: 15px;
+      padding: 15px;
+      border: 1px solid  #e5dfe8;
+      float: left;/*nosaka kurā pusē atrodas*/
+      width: 21%;
+     border-radius:15px;/*nosaka, cik apaļa būs maliņa*/
+    }
+
+    div.gallery:hover {
+      border: 1px solid #742d9d;
+    }
+
+    div.gallery img {
+      width:360px;
+      height:480px ;
+      text-align:center;
+      margin: 5px;
+      }
+    img{
+        border-radius: 5px;
+      }
+    body {
+  background-color:#fffcf1; /*fona krāsa*/
+  margin-left: 2%;
+  margin-right: 2%;
+}
+     body,h1,h2,h3,h4,h5,h6 {font-family: "Georgia", sans-serif}
+ </style>
 </head>
 
 <body>
-  <h1> MANS DATORIKAS PORTFOLIO</h1><!--Virsraksts-->
+  <h1> WORD</h1><!--Virsraksts-->
   
     <ul>
     <li class="dropdown"> <!--izveido navigāciju-->
@@ -25,8 +60,33 @@
   <li><a href="3d.html"> 3D projekts </a></li>
   <li><a href="index.html"> Uz sākumu </a></li>
   </ul>
-  
-  <p>MS Word iemācījāmies Mail Merge jeb pasta sapludināšanu.</p>
  
+ 
+  <div class="gallery">
+
+    <a target="_blank" href="augsejieelpceli.png">
+      <img src="images/word_1.PNG" alt="Foto ar Word darba pierādījumu par mail merge.">
+    </a>
+    <div class="desc">MS Word iemācījāmies Mail Merge jeb pasta sapludināšanu</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="gazumaina.png">
+      <img src="images/word_2.PNG" alt="Foto ar Word darba pierādījumu par mail merge." >
+    </a>
+    <div class="desc">Vēl viens pasta sapludināšanas paraugs.</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="shema.png">
+      <img src="images/word_4.PNG" alt="Foto ar Word darba pierādījumu par tabulatoru teoriju.">
+    </a>
+    <div class="desc">Apguvām tabulatora izmantošanu.</div>
+  </div>
+
+
+  </div>
+  
+  
 </body>
 </html>
