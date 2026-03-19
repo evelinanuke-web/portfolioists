@@ -90,15 +90,11 @@ h4{
   color: #3d3d3d;
 }
 
-a:link{
+.melns-links{
   color: #3d3d3d;
 }
-a:visited{
+.melns-links:visited{
   color: #3d3d3d;
 }
-a:hover{
-  color: #3d3d3d;
-}
-a:active{
-  color: #3d3d3d;
-}
+
+
