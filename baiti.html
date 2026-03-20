@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Baiti</title>
+    <style>
+   .box {
+            border: 1px solid black;
+            padding: 15px;
+            width: 550px;
+            font-family: sans-serif;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <form id="kalkulators">
+            <label>Aprēķināt cik daudz informācijas var lejupielādēt</label><br>
+            
+            <input type="number" id="sekundes" onclick="this.form.reset()"> 
+            sekundēs, ja interneta ātrums ir 25 Mbps.
+            
+            <br><br>
+            <label>Atbilde</label><br>
+            <input type="text" id="rezultats" readonly>
+            
+            <input type="radio" name="unit" value="KiB" onclick="aprekinat()"> KiB
+            <input type="radio" name="unit" value="KB" onclick="aprekinat()"> KB
+        </form>
+    </div>
+
+    <script>
+ !
+        function aprekinat() {
+           
+            let s = document.getElementById('sekundes').value;
+            
+           
+            let unit = document.querySelector('input[name="unit"]:checked').value;
+            
+           
+            if (s === "" || s <= 0) {
+                alert("Vispirms ieraksti sekundes!");
+                return;
+            }
+
+          
+            let baiti = (25 * 1000000 * s) / 8;
+            let rezultats;
+
+            if (unit === "KB") {
+                rezultats = baiti / 1000; 
+            } else {
+                rezultats = baiti / 1024; 
+            }
+
+         
+            document.getElementById('rezultats').value = rezultats.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
+
